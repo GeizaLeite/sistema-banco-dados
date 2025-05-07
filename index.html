@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Turismo na Cidade</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Imagens dos cards */
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border: none;
+        }
+
+        /* Cards */
+        .card {
+            margin-bottom: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Seção Sobre - imagem e texto */
+        #sobre img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #sobre .col-md-6 img {
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+        /* Formulário de contato */
+        #contato form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Rodapé */
+        footer a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#"> O Paraíso Natural Espera por Você! </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#atracoes">Atrações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hospedagem">Hospedagem</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#emergência">Emergência</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="text-center text-white bg-dark p-5">
+        <h1>Descubra Bodoquena</h1>
+        <p>Os melhores roteiros e atrações em um só lugar.</p>
+    </header>
+
+    <!-- Sobre a Cidade -->
+    <section id="sobre" class="container my-5">
+        <h2 class="text-center mb-4">Sobre Bodoquena</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/bodoquena.jpeg" class="img-fluid rounded" alt="Vista de Bodoquena">
+            </div>
+            <div class="col-md-6">
+                <p>Localizada no coração do Mato Grosso do Sul, Bodoquena é um verdadeiro paraíso ecológico. Com suas paisagens deslumbrantes, cachoeiras cristalinas e rica biodiversidade, a cidade atrai turistas que buscam tranquilidade e contato com a natureza.</p>
+                <p>A cidade está situada na Serra da Bodoquena, uma região privilegiada com formações rochosas, rios de águas azuis e uma vasta fauna e flora. É um destino perfeito para ecoturismo e aventura, oferecendo atividades como trilhas, mergulho, boia cross e rapel.</p>
+                <p>Além das belezas naturais, Bodoquena também se destaca pela hospitalidade de seus moradores e pela gastronomia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atrações Turísticas -->
+    <section id="atracoes" class="container my-5">
+        <h2 class="text-center mb-4">Atrações Turísticas</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex">
+    <div class="card h-100 d-flex flex-column">
+
+                    <img src="img/bocadaonca.jpg.jpg" alt="Balneário Boca da Onça">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Boca da Onça</h5>
+                        <p class="card-text">A maior cachoeira do Mato Grosso do Sul
+e o maior rapel de plataforma do Brasil.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex">
+    <div class="card h-100 d-flex flex-column">
+
+                    <img src="img/rioazul.jpg" alt="Rio Azul">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nascente do Rio Azul</h5>
+                        <p class="card-text">Surpreenda seus sentidos! Descubra a beleza do Rio Azul.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex">
+    <div class="card h-100 d-flex flex-column">
+
+                    <img src="img/refugio.jpg" alt="Refugio Canaã">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Refúgio Canaã</h5>
+                        <p class="card-text">Refúgio perfeito para quem busca paz e sossego.</p>
+                    </div>
+                </div>
+            </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 d-flex">
+    <div class="card h-100 d-flex flex-column">
+
+                    <img src="img/morraria.jpg" alt="Mirante Morraria do Sul">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mirante Morraria do Sul</h5>
+                        <p class="card-text">Cenário deslumbrante do alto da Serra da Bodoquena.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hospedagem -->
+    <section id="hospedagem" class="container my-5">
+        <h2 class="text-center mb-4">Opções de Hospedagem</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/aguas.jpg" alt="Hotel Águas de Bodoquena">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Hotel Águas de Bodoquena</h5>
+                        <p class="card-text">Uma excelente experiencia em hospedagem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/sierra.jpeg" alt="Hotel La Sierra">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Hotel La Sierra</h5>
+                        <p class="card-text">Ambientes sofisticados, suítes aconchegantes e localização estratégica.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/ortega.jpeg" alt="Pousada Ortega">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pousada Ortega</h5>
+                        <p class="card-text">Conforto e simplicidade. Hospedagem acessível em localização central.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/casa charme.jpeg" alt="Casa Charme">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Casa de Campo Charme da Serra da Bodoquena</h5>
+                        <p class="card-text">Charme, beleza e tranquilidade junto à Natureza!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <!-- Pontos de Emergência -->
+<section id="emergencia" class="container my-5">
+  <div class="p-4 border border-danger rounded bg-light shadow-sm">
+    <h2 class="text-danger text-center mb-4">Pontos de Emergência</h2>
+    <p class="text-center mb-4">
+      Em caso de emergência, procure ajuda nos locais abaixo.
+    </p>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 mb-4 d-flex">
+        <div class="card w-100 d-flex flex-column align-items-center p-3 text-center border-danger border-2 shadow-sm">
+          <i class="bi bi-hospital fs-3 text-danger mb-2"></i>
+          <p><strong>Hospital Municipal Francisco Sales</strong><br>Rua Manoel José Ferreira, 120 - Jardim Planalto</p>
+          <div class="mt-auto">
+            <a href="https://www.google.com/maps?q=Hospital+Municipal+Bodoquena" target="_blank" class="btn btn-outline-danger btn-sm">Ver no mapa</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4 d-flex">
+        <div class="card w-100 d-flex flex-column align-items-center p-3 text-center border-danger border-2 shadow-sm">
+          <i class="bi bi-capsule-pill fs-3 text-danger mb-2"></i>
+          <p><strong>Nova Farma</strong><br>Av. Manoel Rodrigues Oliveira, 279 - Centro</p>
+          <div class="mt-auto">
+            <a href="https://www.google.com/maps?q=Nova+Farma+Bodoquena" target="_blank" class="btn btn-outline-danger btn-sm">Ver no mapa</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4 d-flex">
+        <div class="card w-100 d-flex flex-column align-items-center p-3 text-center border-danger border-2 shadow-sm">
+          <i class="bi bi-telephone-inbound fs-3 text-danger mb-2"></i>
+          <p><strong>Polícia Civil de Bodoquena</strong><br>Rua Manoel de Pinho, 480 - Centro</p>
+          <div class="mt-auto">
+            <a href="https://www.google.com/maps?q=Polícia+Civil+Bodoquena" target="_blank" class="btn btn-outline-danger btn-sm">Ver no mapa</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4 d-flex">
+        <div class="card w-100 d-flex flex-column align-items-center p-3 text-center border-danger border-2 shadow-sm">
+          <i class="bi bi-heart-pulse fs-3 text-danger mb-2"></i>
+          <p><strong>Clínica Veterinária</strong><br>Av. Manoel Rodrigues Oliveira, 221 - Centro</p>
+          <div class="mt-auto">
+            <a href="https://www.google.com/maps?q=Clínica+Veterinária+Bodoquena" target="_blank" class="btn btn-outline-danger btn-sm">Ver no mapa</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Contato -->
+<section id="contato" class="container my-5">
+  <h2 class="text-center mb-4">Entre em Contato</h2>
+  <form id="formContato">
+    <div class="mb-3">
+      <label class="form-label">Nome:</label>
+      <input type="text" class="form-control" placeholder="Digite seu nome" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">E-mail:</label>
+      <input type="email" class="form-control" placeholder="Digite seu e-mail" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Mensagem:</label>
+      <textarea class="form-control" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Enviar</button>
+  </form>
+</section>
+
+<!-- Rodapé -->
+<footer class="bg-primary text-white text-center py-4">
+  <p class="mb-2">Siga-nos nas redes sociais</p>
+  <div>
+    <a href="https://www.facebook.com/suaPagina" target="_blank" class="text-white me-3"><i class="bi bi-facebook"></i> Facebook</a>
+    <a href="#" target="_blank" class="text-white me-3"><i class="bi bi-instagram"></i> Instagram</a>
+    <a href="#" target="_blank" class="text-white"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+  </div>
+  <p class="mt-3 mb-0">&copy; 2025 Turismo Bodoquena. Todos os direitos reservados.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Script para envio do formulário -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('formContato');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      alert('Mensagem enviada com sucesso!');
+      form.reset();
+    });
+  });
+</script>
+
+</body>
+</html>
